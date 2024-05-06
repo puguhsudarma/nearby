@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/puguhsudarma/nearby.git", :branch => "main" }
+  spec.source       = { :git => "https://github.com/puguhsudarma/nearby.git", :branch => "main", :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "Classes", "connections/swift/**/*.{h,m,swift}"
-  # spec.exclude_files = "Classes/Exclude"
+  spec.exclude_files = "connections/swift/NearbyConnections/Example/**/*"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -132,5 +132,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.swift_versions = "5.0"
+  spec.static_framework = true
 
 end
