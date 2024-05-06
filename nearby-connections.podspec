@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/puguhsudarma/nearby.git", :branch => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/puguhsudarma/nearby.git", :branch => "main" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
